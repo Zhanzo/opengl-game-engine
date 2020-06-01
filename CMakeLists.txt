@@ -27,8 +27,7 @@ else()
     endif()
 endif()
 
-include_directories(headers/
-                    include/
+include_directories(include/
                     lib/assimp/include/
                     lib/bullet/src/
                     lib/glfw/include/)
