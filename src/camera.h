@@ -31,6 +31,8 @@ class Camera {
     // returns the view matrix calculated using Euler Angles and the LookAt Matrix
     glm::mat4 get_view_matrix() { return glm::lookAt(this->position, this->position + this->front, this->up); }
 
+    glm::vec3 get_position() { return this->position; }
+
     float get_zoom() { return this->zoom; }
 
     // processes input received from any keyboard-like input system. Accepts input parameter in the form of camera
