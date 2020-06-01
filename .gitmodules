@@ -1,0 +1,12 @@
+[submodule "lib/assimp"]
+    path = lib/assimp
+    url = https://github.com/assimp/assimp.git
+    branch = master
+[submodule "lib/glfw"]
+    path = lib/glfw
+    url = https://github.com/glfw/glfw.git
+    branch = master
+[submodule "lib/bullet"]
+    path = lib/bullet
+    url = https://github.com/bulletphysics/bullet3.git
+    branch = master
