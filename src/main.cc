@@ -72,14 +72,15 @@ int main() {
         return -1;
     }
 
-    stbi_set_flip_vertically_on_load(true);
+    //stbi_set_flip_vertically_on_load(true);
     glEnable(GL_DEPTH_TEST);
 
     // build and compile our shader program
     // ------------------------------------
     Shader shader{"model_loading.vert", "model_loading.frag"};
 
-    Model model{"backpack/backpack.obj"};
+    Model model;
+    model.load("backpack.obj", "backpack/");
 
     // render loop
     // -----------

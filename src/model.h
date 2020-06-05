@@ -1,122 +1,156 @@
 #ifndef MODEL_H
 #define MODEL_H
-
-#include <assimp/Importer.hpp>
-#include <assimp/postprocess.h>
-#include <assimp/scene.h>
+#define TINYOBJLOADER_IMPLEMENTATION
 
 #include <stb_image.h>
+#include <tiny_obj_loader.h>
 
 #include <iostream>
+#include <algorithm>
 #include <vector>
 
 #include "mesh.h"
 #include "shader.h"
 
+struct Vertex {
+    glm::vec3 position;
+    glm::vec3 normal;
+    glm::vec3 colors;
+    glm::vec2 tex_coords;
+};
+
 class Model {
   public:
-    Model(std::string path) { load_model(path); }
+    Model() { }
 
     void draw(Shader shader) {
-        for (unsigned int i{0}; i < meshes.size(); ++i) meshes[i].draw(shader);
+        glBindVertexArray(VAO);
+        glDrawElements(GL_TRIANGLES, index_count, GL_UNSIGNED_INT, 0);
+        glBindVertexArray(0);
+    }
+
+    void load(const std::string& path, const std::string& directory) {
+        std::vector<Vertex> vertices;
+        std::vector<GLuint> indices;
+        
+
+        obj_reader.ParseFromFile(directory + path);
+        std::string warn{obj_reader.Warning()};
+        std::string err{obj_reader.Error()};
+
+        if (!warn.empty()) std::cout << warn << std::endl;
+        if (!err.empty()) std::cout << err << std::endl;
+        if (!obj_reader.Valid()) std::cout << "error" << std::endl;
+
+        tinyobj::attrib_t                attrib{obj_reader.GetAttrib()};
+        std::vector<tinyobj::shape_t>    shapes{obj_reader.GetShapes()};
+
+        glm::vec3 min_values{attrib.vertices[0], attrib.vertices[1], attrib.vertices[2]};
+        glm::vec3 max_values{attrib.vertices[0], attrib.vertices[1], attrib.vertices[2]};
+        for (const auto& shape : shapes) {
+            for (const auto& index : shape.mesh.indices) {
+                Vertex vertex;
+
+                vertex.position = {attrib.vertices[3 * index.vertex_index + 0],
+                                   attrib.vertices[3 * index.vertex_index + 1],
+                                   attrib.vertices[3 * index.vertex_index + 2]};
+
+
+                if (!attrib.normals.empty()) {
+                    vertex.normal = {attrib.normals[3 * index.normal_index + 0],
+                    attrib.normals[3 * index.normal_index + 1],
+                    attrib.normals[3 * index.normal_index + 2]
+                    };
+                } else {
+                    vertex.normal = {0, 1, 0};
+                }
+
+                if (!attrib.texcoords.empty()) {
+                    vertex.tex_coords = {attrib.texcoords[2 * index.texcoord_index + 0],
+                    attrib.texcoords[2 * index.texcoord_index + 1]};
+                }
+
+                if (!attrib.colors.empty()) {
+                    vertex.colors = {attrib.colors[3 * index.vertex_index + 0], attrib.colors[3 * index.vertex_index + 1],
+                       attrib.colors[3 * index.vertex_index + 2]};
+                }
+
+                min_values.x = std::min(vertex.position.x, min_values.x);
+                min_values.y = std::min(vertex.position.y, min_values.y);
+                min_values.z = std::min(vertex.position.z, min_values.z);
+                max_values.x = std::max(vertex.position.x, min_values.x);
+                max_values.y = std::max(vertex.position.y, min_values.y);
+                max_values.z = std::max(vertex.position.z, min_values.z);
+
+                vertices.push_back(vertex);
+                indices.push_back(indices.size());
+            }
+        }
+        index_count = indices.size();
+        radius = (max_values - min_values) / 2.0f;
+
+        load_textures(directory);
+
+        create_buffers(vertices, indices);
     }
 
   private:
     // model data
-    std::vector<Texture> textures_loaded;
-    std::vector<Mesh>    meshes;
-    std::string          directory;
+    tinyobj::ObjReader obj_reader;
+    std::vector<Texture> textures;
+    GLuint VAO, VBO, EBO, index_count;
+    glm::vec3            radius;
 
-    void load_model(std::string path) {
-        Assimp::Importer import;
-        const aiScene*   scene{import.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs)};
+    void load_textures(const std::string& directory) {
+        std::vector<tinyobj::material_t> materials{obj_reader.GetMaterials()};
 
-        if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) {
-            std::cout << "ERROR:ASSIMP::" << import.GetErrorString() << std::endl;
-            return;
-        }
-        directory = path.substr(0, path.find_first_of('/'));
+        for (auto& material : materials) {
+            Texture texture_diffuse;
+            texture_diffuse.id = texture_from_file(material.diffuse_texname.c_str(), directory);
+            texture_diffuse.type = "texture_diffuse";
+            texture_diffuse.path = directory + material.diffuse_texname;
+            textures.push_back(texture_diffuse);
 
-        process_node(scene->mRootNode, scene);
-    }
-
-    void process_node(aiNode* node, const aiScene* scene) {
-        for (unsigned int i{0}; i < node->mNumMeshes; ++i) {
-            aiMesh* mesh{scene->mMeshes[node->mMeshes[i]]};
-            meshes.push_back(process_mesh(mesh, scene));
-        }
-        for (unsigned int i{0}; i < node->mNumChildren; ++i) {
-            process_node(node->mChildren[i], scene);
+            Texture texture_specular;
+            texture_specular.id = texture_from_file(material.specular_texname.c_str(), directory);
+            texture_specular.type = "texture_ambient";
+            texture_specular.path = directory + material.specular_texname;
+            textures.push_back(texture_specular);
         }
     }
 
-    Mesh process_mesh(aiMesh* mesh, const aiScene* scene) {
-        std::vector<Vertex>  vertices;
-        std::vector<GLuint>  indices;
-        std::vector<Texture> textures;
+    void create_buffers(std::vector<Vertex> vertices, std::vector<GLuint> indices) {
+        glGenVertexArrays(1, &VAO);
+        glGenBuffers(1, &VBO);
+        glGenBuffers(1, &EBO);
 
-        for (unsigned int i{0}; i < mesh->mNumVertices; ++i) {
-            Vertex vertex;
+        glBindVertexArray(VAO);
+        glBindBuffer(GL_ARRAY_BUFFER, VBO);
 
-            // process vertex positions
-            glm::vec3 position{mesh->mVertices[i].x, mesh->mVertices[i].y, mesh->mVertices[i].z};
-            vertex.position = position;
+        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex),
+                 &vertices[0], GL_STATIC_DRAW);
 
-            // process vertex normals
-            glm::vec3 normal{mesh->mNormals[i].x, mesh->mNormals[i].y, mesh->mNormals[i].z};
-            vertex.normal = normal;
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint),
+                 &indices[0], GL_STATIC_DRAW);
 
-            // process vertex texture coords
-            if (mesh->mTextureCoords[0]) {
-                glm::vec2 tex_coords{mesh->mTextureCoords[0][i].x, mesh->mTextureCoords[0][i].y};
-                vertex.tex_coords = tex_coords;
-            } else
-                vertex.tex_coords = glm::vec2(0.0f, 0.0f);
+        // vertex positions
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)0);
+        glEnableVertexAttribArray(0);
 
-            vertices.push_back(vertex);
-        }
+        // vertex normals
+        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, normal));
+        glEnableVertexAttribArray(1);
 
-        for (unsigned int i{0}; i < mesh->mNumFaces; ++i) {
-            aiFace face{mesh->mFaces[i]};
-            for (unsigned int j{0}; j < face.mNumIndices; ++j) indices.push_back(face.mIndices[j]);
-        }
+        // vertex colors
+        glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, colors));
+        glEnableVertexAttribArray(1);
 
-        if (mesh->mMaterialIndex >= 0) {
-            aiMaterial*          material{scene->mMaterials[mesh->mMaterialIndex]};
-            std::vector<Texture> diffuse_maps{
-                load_material_textures(material, aiTextureType_DIFFUSE, "texture_diffuse")};
-            textures.insert(textures.end(), diffuse_maps.begin(), diffuse_maps.end());
-            std::vector<Texture> specular_maps{
-                load_material_textures(material, aiTextureType_SPECULAR, "texture_specular")};
-            textures.insert(textures.end(), specular_maps.begin(), specular_maps.end());
-        }
+        // vertex texture coords
+        glVertexAttribPointer(3, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, tex_coords));
+        glEnableVertexAttribArray(3);
 
-        return Mesh{vertices, indices, textures};
-    }
-
-    std::vector<Texture> load_material_textures(aiMaterial* mat, aiTextureType type, std::string type_name) {
-        std::vector<Texture> textures;
-        for (unsigned int i{0}; i < mat->GetTextureCount(type); ++i) {
-            aiString str;
-            mat->GetTexture(type, i, &str);
-            bool skip{false};
-            for (unsigned int j{0}; j < textures_loaded.size(); ++j) {
-                if (std::strcmp(textures_loaded[j].path.data(), str.C_Str()) == 0) {
-                    textures.push_back(textures_loaded[j]);
-                    skip = true;
-                    break;
-                }
-            }
-            if (!skip) {
-                Texture texture;
-                texture.id   = texture_from_file(str.C_Str(), directory);
-                texture.type = type_name;
-                texture.path = str.C_Str();
-                textures.push_back(texture);
-                textures_loaded.push_back(texture);
-            }
-        }
-        return textures;
+        glBindVertexArray(0);
     }
 
     unsigned int texture_from_file(const char* path, const std::string& directory) {
