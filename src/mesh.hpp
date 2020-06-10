@@ -1,5 +1,4 @@
-#ifndef MESH_H
-#define MESH_H
+#pragma once
 
 #include <glad/glad.h>
 #include <glm/glm.hpp>
@@ -7,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#include "shader.h"
+#include "shader.hpp"
 
 struct Texture {
     GLuint      id;
@@ -15,4 +14,3 @@ struct Texture {
     std::string path;
 };
 
-#endif

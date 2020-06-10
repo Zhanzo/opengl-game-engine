@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 project(Engine)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 option(GLFW_BUILD_DOCS OFF)
 option(GLFW_BUILD_EXAMPLES OFF)
 option(GLFW_BUILD_TESTS OFF)
@@ -26,8 +28,8 @@ include_directories(include/
                     lib/bullet/src/
                     lib/glfw/include/)
 
-file(GLOB PROJECT_HEADERS headers/*.h)
-file(GLOB PROJECT_SOURCES src/*.cc
+file(GLOB PROJECT_HEADERS headers/*.hpp)
+file(GLOB PROJECT_SOURCES src/*.cpp
                           src/*.c)
 file(GLOB PROJECT_SHADERS shaders/*.vert
                           shaders/*.frag)

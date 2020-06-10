@@ -1,0 +1,1197 @@
+[
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\\\"/Users/robin/Documents/git/OpenGL-Game-Engine\\\" -I/Users/robin/Documents/git/OpenGL-Game-Engine/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Engine.dir/src/glad.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/src/glad.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/src/glad.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\\\"/Users/robin/Documents/git/OpenGL-Game-Engine\\\" -I/Users/robin/Documents/git/OpenGL-Game-Engine/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include   -Wall -Wextra -Wpedantic -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Engine.dir/src/main.cc.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/src/main.cc",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/src/main.cc"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\\\"/Users/robin/Documents/git/OpenGL-Game-Engine\\\" -I/Users/robin/Documents/git/OpenGL-Game-Engine/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include   -Wall -Wextra -Wpedantic -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Engine.dir/src/stb_image.cc.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/src/stb_image.cc",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/src/stb_image.cc"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/context.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/context.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/init.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/init.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/input.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/input.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/monitor.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/monitor.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/vulkan.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/vulkan.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/window.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/window.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_init.m.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_init.m",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_init.m"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_joystick.m.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_joystick.m",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_joystick.m"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_monitor.m.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_monitor.m",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_monitor.m"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_window.m.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_window.m",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_window.m"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_time.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_time.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/cocoa_time.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_thread.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/posix_thread.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/nsgl_context.m.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/nsgl_context.m",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/nsgl_context.m"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/egl_context.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/egl_context.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/egl_context.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/include -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src -I/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/glfw/src   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/osmesa_context.c.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/osmesa_context.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/glfw/src/osmesa_context.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o   -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/clew/clew.c",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/clew/clew.c"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuGridBroadphase.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuGridBroadphase.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuSapBroadphase.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuSapBroadphase.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvh.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvh.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ConvexHullContact.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ConvexHullContact.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3QuantizedBvh.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3QuantizedBvh.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3StridingMeshInterface.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3StridingMeshInterface.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleCallback.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleCallback.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleIndexVertexArray.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleIndexVertexArray.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3BoundSearchCL.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3BoundSearchCL.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3FillCL.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3FillCL.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3LauncherCL.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3LauncherCL.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanCL.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanCL.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanFloat4CL.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanFloat4CL.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3RadixSort32CL.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3RadixSort32CL.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/Raycast/b3GpuRaycast.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/Raycast/b3GpuRaycast.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuGenericConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuGenericConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuJacobiContactSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuJacobiContactSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuNarrowPhase.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuNarrowPhase.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsConstraintSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsConstraintSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsContactSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsContactSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuRigidBodyPipeline.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3GpuRigidBodyPipeline.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3OpenCL",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DB3_USE_CLEW -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3Solver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3OpenCL/RigidBody/b3Solver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3BulletFile.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3BulletFile.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet2FileLoader.dir/b3Chunk.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3Chunk.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3Chunk.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet2FileLoader.dir/b3DNA.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3DNA.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3DNA.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet2FileLoader.dir/b3File.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3File.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3File.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet2FileLoader.dir/b3Serializer.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3Serializer.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Serialize/Bullet2FileLoader/b3Serializer.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Dynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Dynamics.dir/b3CpuRigidBodyPipeline.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/b3CpuRigidBodyPipeline.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/b3CpuRigidBodyPipeline.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Dynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3FixedConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3FixedConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3FixedConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Dynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Generic6DofConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3Generic6DofConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3Generic6DofConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Dynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3PgsJacobiSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3PgsJacobiSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3PgsJacobiSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Dynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Point2PointConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3Point2PointConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3Point2PointConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Dynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3TypedConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3TypedConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Dynamics/ConstraintSolver/b3TypedConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Collision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/BroadPhaseCollision/b3DynamicBvh.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/BroadPhaseCollision/b3DynamicBvh.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Collision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/BroadPhaseCollision/b3DynamicBvhBroadphase.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/BroadPhaseCollision/b3DynamicBvhBroadphase.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Collision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/BroadPhaseCollision/b3OverlappingPairCache.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/BroadPhaseCollision/b3OverlappingPairCache.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Collision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/NarrowPhaseCollision/b3ConvexUtility.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/NarrowPhaseCollision/b3ConvexUtility.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Collision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/NarrowPhaseCollision/b3CpuNarrowPhase.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Collision/NarrowPhaseCollision/b3CpuNarrowPhase.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Geometry",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Geometry/b3ConvexHullComputer.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Geometry/b3ConvexHullComputer.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Geometry",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Geometry/b3GeometryUtil.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Geometry/b3GeometryUtil.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletInverseDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletInverseDynamics.dir/IDMath.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletInverseDynamics/IDMath.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletInverseDynamics/IDMath.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletInverseDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletInverseDynamics/MultiBodyTree.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletInverseDynamics/MultiBodyTree.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletInverseDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletInverseDynamics/details/MultiBodyTreeInitCache.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletInverseDynamics/details/MultiBodyTreeInitCache.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletInverseDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletInverseDynamics/details/MultiBodyTreeImpl.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletInverseDynamics/details/MultiBodyTreeImpl.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btSoftBody.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftBody.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftBody.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btSoftMultiBodyDynamicsWorld.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftMultiBodyDynamicsWorld.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftMultiBodyDynamicsWorld.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btDeformableBackwardEulerObjective.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableBackwardEulerObjective.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableBackwardEulerObjective.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btDeformableBodySolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableBodySolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableBodySolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btDeformableMultiBodyConstraintSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableMultiBodyConstraintSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableMultiBodyConstraintSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btDeformableContactProjection.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableContactProjection.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableContactProjection.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btDeformableMultiBodyDynamicsWorld.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableMultiBodyDynamicsWorld.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableMultiBodyDynamicsWorld.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/btDeformableContactConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableContactConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/btDeformableContactConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletSoftBody",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletSoftBody.dir/poly34.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/poly34.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletSoftBody/poly34.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/BroadphaseCollision/btAxisSweep3.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btAxisSweep3.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btAxisSweep3.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/BroadphaseCollision/btBroadphaseProxy.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/BroadphaseCollision/btCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/BroadphaseCollision/btDbvt.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btDbvt.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btDbvt.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/BroadphaseCollision/btDbvtBroadphase.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btDbvtBroadphase.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btDbvtBroadphase.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/BroadphaseCollision/btDispatcher.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btDispatcher.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btDispatcher.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/BroadphaseCollision/btOverlappingPairCache.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btOverlappingPairCache.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btOverlappingPairCache.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/BroadphaseCollision/btQuantizedBvh.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btQuantizedBvh.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btQuantizedBvh.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/BroadphaseCollision/btSimpleBroadphase.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btSimpleBroadphase.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/BroadphaseCollision/btSimpleBroadphase.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btActivatingCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btBoxBoxCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btBoxBoxCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btBoxBoxCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btBox2dBox2dCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btBox2dBox2dCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btBox2dBox2dCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btBoxBoxDetector.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btBoxBoxDetector.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btBoxBoxDetector.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btCollisionDispatcher.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionDispatcher.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionDispatcher.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btCollisionDispatcherMt.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionDispatcherMt.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionDispatcherMt.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btCollisionObject.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btCollisionWorld.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btCollisionWorldImporter.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionWorldImporter.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionWorldImporter.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btCompoundCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCompoundCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCompoundCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btCompoundCompoundCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCompoundCompoundCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btCompoundCompoundCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btConvexConcaveCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btConvexConcaveCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btConvexConcaveCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btConvexConvexAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btConvexPlaneCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btConvexPlaneCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btConvexPlaneCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btConvex2dConvex2dAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btConvex2dConvex2dAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btConvex2dConvex2dAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btDefaultCollisionConfiguration.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btEmptyCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btEmptyCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btEmptyCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btGhostObject.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btGhostObject.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btGhostObject.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btHashedSimplePairCache.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btHashedSimplePairCache.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btHashedSimplePairCache.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btInternalEdgeUtility.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btInternalEdgeUtility.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btInternalEdgeUtility.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btManifoldResult.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btManifoldResult.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btManifoldResult.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btSimulationIslandManager.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btSimulationIslandManager.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btSimulationIslandManager.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btSphereBoxCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btSphereBoxCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btSphereBoxCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btSphereSphereCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btSphereTriangleCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btSphereTriangleCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btSphereTriangleCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/btUnionFind.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btUnionFind.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/btUnionFind.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionDispatch/SphereTriangleDetector.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/SphereTriangleDetector.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionDispatch/SphereTriangleDetector.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btBoxShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btBoxShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btBoxShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btBox2dShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btBox2dShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btBox2dShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btBvhTriangleMeshShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btBvhTriangleMeshShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btBvhTriangleMeshShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btCapsuleShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btCapsuleShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btCapsuleShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btCollisionShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btCollisionShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btCollisionShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btCompoundShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btCompoundShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btCompoundShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btConcaveShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConcaveShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConcaveShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btConeShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConeShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConeShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btConvexHullShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexHullShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexHullShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btConvexInternalShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexInternalShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexInternalShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btConvexPointCloudShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexPointCloudShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexPointCloudShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btConvexPolyhedron.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexPolyhedron.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexPolyhedron.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btConvexShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btConvex2dShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvex2dShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvex2dShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btConvexTriangleMeshShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexTriangleMeshShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btConvexTriangleMeshShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btCylinderShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btCylinderShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btCylinderShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btEmptyShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btEmptyShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btEmptyShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btHeightfieldTerrainShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btHeightfieldTerrainShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btHeightfieldTerrainShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btMiniSDF.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btMiniSDF.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btMiniSDF.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btMinkowskiSumShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btMinkowskiSumShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btMinkowskiSumShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btMultimaterialTriangleMeshShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btMultimaterialTriangleMeshShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btMultimaterialTriangleMeshShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btMultiSphereShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btMultiSphereShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btMultiSphereShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btOptimizedBvh.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btOptimizedBvh.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btOptimizedBvh.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btPolyhedralConvexShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btPolyhedralConvexShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btPolyhedralConvexShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btScaledBvhTriangleMeshShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btSdfCollisionShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btSdfCollisionShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btSdfCollisionShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btShapeHull.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btShapeHull.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btShapeHull.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btSphereShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btSphereShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btSphereShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btStaticPlaneShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btStaticPlaneShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btStaticPlaneShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btStridingMeshInterface.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btStridingMeshInterface.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btStridingMeshInterface.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btTetrahedronShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTetrahedronShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTetrahedronShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btTriangleBuffer.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleBuffer.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleBuffer.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btTriangleCallback.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleCallback.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleCallback.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btTriangleIndexVertexArray.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleIndexVertexArray.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleIndexVertexArray.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btTriangleIndexVertexMaterialArray.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleIndexVertexMaterialArray.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleIndexVertexMaterialArray.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btTriangleMesh.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleMesh.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleMesh.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btTriangleMeshShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleMeshShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleMeshShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/CollisionShapes/btUniformScalingShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btUniformScalingShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/CollisionShapes/btUniformScalingShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/btContactProcessing.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btContactProcessing.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btContactProcessing.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/btGenericPoolAllocator.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGenericPoolAllocator.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGenericPoolAllocator.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/btGImpactBvh.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGImpactBvh.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGImpactBvh.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/btGImpactCollisionAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/btGImpactQuantizedBvh.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGImpactQuantizedBvh.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGImpactQuantizedBvh.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/btGImpactShape.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGImpactShape.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btGImpactShape.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/btTriangleShapeEx.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btTriangleShapeEx.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/btTriangleShapeEx.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/gim_box_set.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/gim_box_set.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/gim_box_set.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/gim_contact.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/gim_contact.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/gim_contact.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/gim_memory.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/gim_memory.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/gim_memory.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/Gimpact/gim_tri_collision.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/gim_tri_collision.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/Gimpact/gim_tri_collision.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btContinuousConvexCollision.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btContinuousConvexCollision.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btContinuousConvexCollision.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btConvexCast.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btConvexCast.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btConvexCast.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btGjkConvexCast.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btGjkConvexCast.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btGjkConvexCast.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btGjkEpa2.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btGjkEpa2.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btGjkEpa2.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btGjkPairDetector.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btGjkPairDetector.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btGjkPairDetector.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btPersistentManifold.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btPersistentManifold.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btPersistentManifold.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btRaycastCallback.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btRaycastCallback.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btRaycastCallback.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btSubSimplexConvexCast.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btVoronoiSimplexSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletCollision",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletCollision.dir/NarrowPhaseCollision/btPolyhedralContactClipping.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btPolyhedralContactClipping.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletCollision/NarrowPhaseCollision/btPolyhedralContactClipping.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Character/btKinematicCharacterController.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Character/btKinematicCharacterController.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Character/btKinematicCharacterController.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btConeTwistConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btContactConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btContactConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btContactConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btFixedConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btFixedConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btFixedConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGearConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btGearConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btGearConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpringConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpring2Constraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHinge2Constraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btHinge2Constraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btHinge2Constraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHingeConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btHingeConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btHingeConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btPoint2PointConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSequentialImpulseConstraintSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSequentialImpulseConstraintSolverMt.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolverMt.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolverMt.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btBatchedConstraints.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btBatchedConstraints.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btBatchedConstraints.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btNNCGConstraintSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btNNCGConstraintSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btNNCGConstraintSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSliderConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btSliderConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btSliderConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSolve2LinearConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btTypedConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/ConstraintSolver/btUniversalConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btUniversalConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/ConstraintSolver/btUniversalConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorld.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorldMt.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorldMt.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorldMt.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Dynamics/btSimulationIslandManagerMt.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btSimulationIslandManagerMt.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btSimulationIslandManagerMt.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Dynamics/btRigidBody.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btRigidBody.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btRigidBody.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Dynamics/btSimpleDynamicsWorld.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Vehicle/btRaycastVehicle.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Vehicle/btRaycastVehicle.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Vehicle/btRaycastVehicle.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Vehicle/btWheelInfo.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Vehicle/btWheelInfo.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Vehicle/btWheelInfo.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBody.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBody.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBody.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraintSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyDynamicsWorld.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyFixedConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyFixedConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyFixedConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyGearConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyGearConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyGearConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointLimitConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointMotor.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointMotor.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointMotor.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyMLCPConstraintSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyPoint2Point.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodySliderConstraint.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodySliderConstraint.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodySliderConstraint.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodySphericalJointMotor.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodySphericalJointMotor.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/Featherstone/btMultiBodySphericalJointMotor.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/MLCPSolvers/btDantzigLCP.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/MLCPSolvers/btDantzigLCP.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/MLCPSolvers/btDantzigLCP.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/MLCPSolvers/btMLCPSolver.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/MLCPSolvers/btMLCPSolver.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/MLCPSolvers/btMLCPSolver.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/BulletDynamics",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/BulletDynamics.dir/MLCPSolvers/btLemkeAlgorithm.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/MLCPSolvers/btLemkeAlgorithm.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/BulletDynamics/MLCPSolvers/btLemkeAlgorithm.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btAlignedAllocator.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btAlignedAllocator.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btAlignedAllocator.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btConvexHull.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btConvexHull.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btConvexHull.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btConvexHullComputer.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btConvexHullComputer.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btConvexHullComputer.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btGeometryUtil.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btGeometryUtil.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btGeometryUtil.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btPolarDecomposition.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btPolarDecomposition.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btPolarDecomposition.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btQuickprof.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btQuickprof.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btQuickprof.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btSerializer.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btSerializer.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btSerializer.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btSerializer64.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btSerializer64.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btSerializer64.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btThreads.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btThreads.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btThreads.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/btVector3.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btVector3.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/btVector3.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/TaskScheduler/btTaskScheduler.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/TaskScheduler/btTaskScheduler.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/TaskScheduler/btTaskScheduler.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportPosix.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/TaskScheduler/btThreadSupportPosix.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/TaskScheduler/btThreadSupportPosix.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/LinearMath",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportWin32.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/TaskScheduler/btThreadSupportWin32.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/LinearMath/TaskScheduler/btThreadSupportWin32.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Common",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Common/b3AlignedAllocator.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Common/b3AlignedAllocator.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Common",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Common.dir/b3Vector3.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Common/b3Vector3.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Common/b3Vector3.cpp"
+},
+{
+  "directory": "/Users/robin/Documents/git/OpenGL-Game-Engine/build/lib/bullet/src/Bullet3Common",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK -I/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src  -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Bullet3Common.dir/b3Logging.o -c /Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Common/b3Logging.cpp",
+  "file": "/Users/robin/Documents/git/OpenGL-Game-Engine/lib/bullet/src/Bullet3Common/b3Logging.cpp"
+}
+]
