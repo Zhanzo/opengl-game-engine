@@ -8,8 +8,8 @@
 #include "resource_manager.hpp"
 
 // settings
-const unsigned int screenWidth { 800 };
-const unsigned int screenHeight { 600 };
+const size_t screenWidth { 800 };
+const size_t screenHeight { 600 };
 
 Game Breakout { screenWidth, screenHeight };
 ResourceManager resourceManager;
@@ -46,14 +46,13 @@ int main()
     // glad: load all OpenGL function pointers
     // ---------------------------------------
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-        std::cerr << "Failed to initialize GLAD" << std::endl;
+        std::cout << "Failed to initialize GLAD" << std::endl;
         return EXIT_FAILURE;
     }
 
     glfwSetKeyCallback(window, keyCallback);
     glfwSetFramebufferSizeCallback(window, framebufferSizeCallback);
 
-    glViewport(0, 0, screenWidth, screenHeight);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
@@ -62,8 +61,6 @@ int main()
     // timing
     float deltaTime { 0.0f }; // Time between current frame and last frame
     float lastFrame { 0.0f }; // Time of last frame
-
-    Breakout.setState(Menu);
 
     // render loop
     // -----------

@@ -17,14 +17,14 @@ public:
 
     ~SpriteRenderer() { glDeleteVertexArrays(1, &m_quadVertexArray); }
 
-    void drawSprite(Texture2D& texture, glm::vec2 position, glm::vec2 size = glm::vec2(10), float rotation = 0, glm::vec3 color = glm::vec3(1))
+    void drawSprite(Texture2D& texture, glm::vec2 position, glm::vec2 size = glm::vec2(10.0f), float rotation = 0.0f, glm::vec3 color = glm::vec3(1.0f))
     {
         m_shader.use();
-        glm::mat4 model { glm::mat4(1) };
-        model = glm::translate(model, glm::vec3(position, 0));
+        glm::mat4 model { glm::mat4(1.0f) };
+        model = glm::translate(model, glm::vec3(position, 0.0f));
 
-        model = glm::translate(model, glm::vec3(0.5f * size.x, 0.5f * size.y, 0));
-        model = glm::rotate(model, glm::radians(rotation), glm::vec3(0, 0, 1));
+        model = glm::translate(model, glm::vec3(0.5f * size.x, 0.5f * size.y, 0.0f));
+        model = glm::rotate(model, glm::radians(rotation), glm::vec3(0.0f, 0.0f, 1.0f));
         model = glm::translate(model, glm::vec3(-0.5f * size.x, -0.5f * size.y, 0.0f));
 
         model = glm::scale(model, glm::vec3(size, 1));

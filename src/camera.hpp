@@ -21,9 +21,13 @@ public:
     Camera(glm::vec3 position = glm::vec3(0), glm::vec3 up = glm::vec3(0, 1, 0), float yaw = -90,
         float pitch = 0)
         : m_position { position }
+        , m_front { 0, 0, -1 }
         , m_worldUp { up }
         , m_yaw { yaw }
         , m_pitch { pitch }
+        , m_movementSpeed { 2.5 }
+        , m_mouseSensitivity { 0.1 }
+        , m_zoom { 45 }
     {
         updateCameraVectors();
     }
@@ -31,9 +35,13 @@ public:
     // constructor with scalar values
     Camera(float xPos, float yPos, float zPos, float xUp, float yUp, float zUp, float yaw, float pitch)
         : m_position { glm::vec3(xPos, yPos, zPos) }
+        , m_front { 0, 0, -1 }
         , m_worldUp { glm::vec3(xUp, yUp, zUp) }
         , m_yaw { yaw }
         , m_pitch { pitch }
+        , m_movementSpeed { 2.5 }
+        , m_mouseSensitivity { 0.1 }
+        , m_zoom { 45 }
     {
         updateCameraVectors();
     }
@@ -84,19 +92,9 @@ public:
     }
 
 private:
-    // camera Attributes
-    glm::vec3 m_position;
-    glm::vec3 m_front { 0, 0, -1 };
-    glm::vec3 m_up;
-    glm::vec3 m_right;
-    glm::vec3 m_worldUp;
-    // euler Angles
-    float m_yaw;
-    float m_pitch;
-    // camera options
-    float m_movementSpeed { 2.5 };
-    float m_mouseSensitivity { 0.1 };
-    float m_zoom { 45 };
+    glm::vec3 m_position, m_front, m_up, m_right, m_worldUp;
+    float m_yaw, m_pitch;
+    float m_movementSpeed, m_mouseSensitivity, m_zoom;
 
     // calculates the front vector from the Camera's (m_up) Euler Angles
     void updateCameraVectors()

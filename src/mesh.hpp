@@ -9,7 +9,7 @@
 #include "shader.hpp"
 
 struct Texture {
-    GLuint      id;
+    GLuint id;
     std::string type;
     std::string path;
 };

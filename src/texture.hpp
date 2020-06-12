@@ -2,11 +2,24 @@
 
 #include <glad/glad.h>
 
+#include <stddef.h>
+
 class Texture2D {
 public:
-    Texture2D() { glGenTextures(1, &m_id); }
+    Texture2D()
+        : m_width { 0 }
+        , m_height { 0 }
+        , m_internalFormat { GL_RGB }
+        , m_imageFormat { GL_RGB }
+        , m_wrapS { GL_REPEAT }
+        , m_wrapT { GL_REPEAT }
+        , m_filterMin { GL_LINEAR }
+        , m_filterMax { GL_LINEAR }
+    {
+        glGenTextures(1, &m_id);
+    }
 
-    void generate(unsigned int width, unsigned int height, unsigned char* data)
+    void generate(size_t width, size_t height, unsigned char* data)
     {
         m_width = width;
         m_height = height;
@@ -35,9 +48,9 @@ public:
 
 private:
     unsigned int m_id;
-    unsigned int m_width { 0 }, m_height { 0 };
-    unsigned int m_internalFormat { GL_RGB }, m_imageFormat { GL_RGB };
-    unsigned int m_wrapS { GL_REPEAT }, m_wrapT { GL_REPEAT };
-    unsigned int m_filterMin { GL_LINEAR }, m_filterMax { GL_LINEAR };
+    size_t m_width, m_height;
+    unsigned int m_internalFormat, m_imageFormat;
+    unsigned int m_wrapS, m_wrapT;
+    unsigned int m_filterMin, m_filterMax;
 };
 
