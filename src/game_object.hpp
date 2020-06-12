@@ -31,13 +31,6 @@ public:
     {
     }
 
-    void init(glm::vec2 pos, glm::vec2 size, Texture2D& sprite)
-    {
-        m_position = pos;
-        m_size = size;
-        m_sprite = sprite;
-    }
-
     void draw(SpriteRenderer& renderer)
     {
         renderer.drawSprite(m_sprite, m_position, m_size, m_rotation, m_color);
@@ -55,7 +48,7 @@ public:
 
     float getSizeX() { return m_size.x; }
 
-private:
+protected:
     glm::vec2 m_position, m_size, m_velocity;
     glm::vec3 m_color;
     Texture2D m_sprite;

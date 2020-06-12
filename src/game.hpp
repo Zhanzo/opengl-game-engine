@@ -5,7 +5,9 @@
 
 #include <vector>
 
+#include "ball_object.hpp"
 #include "game_level.hpp"
+#include "game_object.hpp"
 #include "resource_manager.hpp"
 #include "sprite_renderer.hpp"
 
@@ -65,24 +67,47 @@ public:
         m_levels.push_back(levelFour);
         m_level = 0;
 
+        // initialize player
         glm::vec2 playerPos { m_width / 2.0f - m_playerSize.x / 2.0f, m_height - m_playerSize.y };
         Texture2D playerTexture { resourceManager.getTexture("paddle") };
         m_player = new GameObject { playerPos, m_playerSize, playerTexture };
+
+        // initialize ball
+        glm::vec2 ballPos { playerPos + glm::vec2(m_playerSize.x / 2.0f - m_ballRadius, -m_ballRadius * 2.0f) };
+        Texture2D ballTexture { resourceManager.getTexture("face") };
+        m_ball = new BallObject { ballPos, m_ballRadius, m_initialBallVelocity, ballTexture };
     }
 
     void processInput(float deltaTime)
     {
         if (m_state == Active) {
             float velocity { m_playerVelocity * deltaTime };
+            float playerPositionX { m_player->getPositionX() };
+            float ballPositionX { m_ball->getPositionX() };
 
-            if (m_keys[GLFW_KEY_A])
-                m_player->setPositionX(glm::max(m_player->getPositionX() - velocity, 0.0f));
-            if (m_keys[GLFW_KEY_D])
-                m_player->setPositionX(glm::min(m_player->getPositionX() + velocity, m_width - m_player->getSizeX()));
+            if (m_keys[GLFW_KEY_A]) {
+                if (playerPositionX >= 0.0f) {
+                    m_player->setPositionX(playerPositionX - velocity);
+                    m_ball->setPositionX(m_ball->getIsStuck() ? ballPositionX - velocity : ballPositionX);
+                }
+            }
+
+            if (m_keys[GLFW_KEY_D]) {
+                if (playerPositionX <= m_width - m_player->getSizeX()) {
+                    m_player->setPositionX(playerPositionX + velocity);
+                    m_ball->setPositionX(m_ball->getIsStuck() ? ballPositionX + velocity : ballPositionX);
+                }
+            }
+
+            if (m_keys[GLFW_KEY_SPACE])
+                m_ball->setIsStuck(false);
         }
     }
 
-    void update(float deltaTime) { }
+    void update(float deltaTime)
+    {
+        m_ball->move(deltaTime, m_width);
+    }
 
     void render(ResourceManager& resourceManager)
     {
@@ -92,6 +117,7 @@ public:
 
             m_levels[m_level].draw(*m_renderer);
             m_player->draw(*m_renderer);
+            m_ball->draw(*m_renderer);
         }
     }
 
@@ -102,10 +128,13 @@ public:
 private:
     SpriteRenderer* m_renderer;
     GameObject* m_player;
+    BallObject* m_ball;
     GameState m_state;
     std::vector<GameLevel> m_levels;
     std::vector<bool> m_keys;
     size_t m_width, m_height, m_level;
     const glm::vec2 m_playerSize { 100.0f, 20.0f };
+    const glm::vec2 m_initialBallVelocity { 100.0f, -350.0f };
     const float m_playerVelocity { 500.0f };
+    const float m_ballRadius { 12.5f };
 };
