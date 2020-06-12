@@ -49,6 +49,8 @@ public:
 
     void setIsStuck(bool isStuck) { m_isStuck = isStuck; }
 
+    float getRadius() { return m_radius; }
+
     bool getIsStuck() { return m_isStuck; }
 
 private:

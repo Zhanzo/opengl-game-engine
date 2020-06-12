@@ -49,7 +49,7 @@ public:
 
         // load textures
         resourceManager.loadTexture("textures/background.jpg", false, "background");
-        resourceManager.loadTexture("textures/awesomeface.jpg", true, "face");
+        resourceManager.loadTexture("textures/awesomeface.png", true, "face");
         resourceManager.loadTexture("textures/block.png", false, "block");
         resourceManager.loadTexture("textures/block_solid.png", false, "block_solid");
         resourceManager.loadTexture("textures/paddle.png", true, "paddle");
@@ -104,9 +104,60 @@ public:
         }
     }
 
-    void update(float deltaTime)
+    // AABB – AABB collision
+    bool checkCollision(GameObject& one, GameObject& two)
+    {
+        // collision x-axis?
+        bool collisionX { one.getPositionX() + one.getSizeX() >= two.getPositionX() && two.getPositionX() + two.getSizeX() >= one.getPositionX() };
+        // collision y-axis?
+        bool collisionY { one.getPositionY() + one.getSizeY() >= two.getPositionY() && two.getPositionY() + two.getSizeY() >= one.getPositionY() };
+
+        // collision only if objects collide on both axes
+        return collisionX && collisionY;
+    }
+
+    // Circle – AABB collision
+    bool checkCollision(BallObject& one, GameObject& two)
+    {
+        // get center point of circle
+        glm::vec2 center { one.getPosition() + one.getRadius() };
+
+        // calculate AABB info (center, half-extents)
+        glm::vec2 aabbHalfExtents { two.getSize() / 2.0f };
+        glm::vec2 aabbCenter { two.getPosition() + aabbHalfExtents };
+
+        // get difference vector between both centers
+        glm::vec2 difference { center - aabbCenter };
+        glm::vec2 clamped { glm::clamp(difference, -aabbHalfExtents, aabbHalfExtents) };
+
+        // add clamped value to AABB center and we get the value of the box closest to the circle
+        glm::vec2 closest { aabbCenter + clamped };
+
+        // retrieve vector between center circle and closest point AABB and check if length <= radius
+        difference = closest - center;
+        return glm::length(difference) < one.getRadius();
+    }
+
+    void doCollisions()
+    {
+        auto bricks { m_levels[m_level].getBricks() };
+
+        for (auto& box : *bricks) {
+            if (!box.getIsDestroyed()) {
+                if (checkCollision(*m_ball, box)) {
+                    if (!box.getIsSolid())
+                        box.setIsDestroyed(true);
+                }
+            }
+        }
+    }
+
+    void
+    update(float deltaTime)
     {
         m_ball->move(deltaTime, m_width);
+
+        doCollisions();
     }
 
     void render(ResourceManager& resourceManager)

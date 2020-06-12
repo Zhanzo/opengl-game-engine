@@ -55,6 +55,8 @@ public:
         return true;
     }
 
+    std::vector<GameObject>* getBricks() { return &m_bricks; }
+
 private:
     std::vector<GameObject> m_bricks;
 

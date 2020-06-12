@@ -38,15 +38,25 @@ public:
 
     void setIsSolid(bool isSolid) { m_isSolid = isSolid; }
 
+    void setIsDestroyed(float isDestroyed) { m_isDestroyed = isDestroyed; }
+
     void setPositionX(float position) { m_position.x = position; }
 
     bool getIsSolid() { return m_isSolid; }
 
     bool getIsDestroyed() { return m_isDestroyed; }
 
+    glm::vec2 getPosition() { return m_position; }
+
     float getPositionX() { return m_position.x; }
 
+    float getPositionY() { return m_position.y; }
+
+    glm::vec2 getSize() { return m_size; }
+
     float getSizeX() { return m_size.x; }
+
+    float getSizeY() { return m_size.y; }
 
 protected:
     glm::vec2 m_position, m_size, m_velocity;
