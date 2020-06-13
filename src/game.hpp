@@ -17,6 +17,19 @@ enum GameState {
     Win
 };
 
+enum Direction {
+    Up,
+    Right,
+    Down,
+    Left
+};
+
+struct Collision {
+    bool hasCollided;
+    Direction direction;
+    glm::vec2 difference;
+};
+
 class Game {
 public:
     Game(size_t width, size_t height)
@@ -78,6 +91,55 @@ public:
         m_ball = new BallObject { ballPos, m_ballRadius, m_initialBallVelocity, ballTexture };
     }
 
+    void update(float deltaTime, ResourceManager& resourceManager)
+    {
+        m_ball->move(deltaTime, m_width);
+
+        doCollisions();
+
+        if (m_ball->getPositionY() >= m_height) {
+            resetLevel(resourceManager);
+            resetPlayer();
+        }
+    }
+
+    void render(ResourceManager& resourceManager)
+    {
+        if (m_state == Active) {
+            Texture2D texture { resourceManager.getTexture("background") };
+            m_renderer->drawSprite(texture, glm::vec2(0.0f, 0.0f), glm::vec2(m_width, m_height), 0.0f);
+
+            m_levels[m_level].draw(*m_renderer);
+            m_player->draw(*m_renderer);
+            m_ball->draw(*m_renderer);
+        }
+    }
+
+    void resetLevel(ResourceManager& resourceManager)
+    {
+        switch (m_level) {
+        case 0:
+            m_levels[0].load(resourceManager, "levels/one.lvl", m_width, m_height / 2);
+            break;
+        case 1:
+            m_levels[1].load(resourceManager, "levels/two.lvl", m_width, m_height / 2);
+            break;
+        case 2:
+            m_levels[2].load(resourceManager, "levels/three.lvl", m_width, m_height / 2);
+            break;
+        case 3:
+            m_levels[3].load(resourceManager, "levels/four.lvl", m_width, m_height / 2);
+            break;
+        }
+    }
+
+    void resetPlayer()
+    {
+        m_player->setSize(m_playerSize);
+        m_player->setPosition(glm::vec2(m_width / 2.0f - m_player->getSizeX() / 2.0f, m_height - m_player->getSizeY()));
+        m_ball->reset(m_player->getPosition() + glm::vec2(m_player->getSizeX() / 2.0f - m_ballRadius, -(m_ballRadius * 2.0f)), m_initialBallVelocity);
+    }
+
     void processInput(float deltaTime)
     {
         if (m_state == Active) {
@@ -104,6 +166,29 @@ public:
         }
     }
 
+    Direction vectorDirection(glm::vec2 target)
+    {
+        float max { 0.0f };
+        unsigned int bestMatch { 0 };
+        glm::vec2 compass[] {
+            glm::vec2(0.0f, 1.0f), // up
+            glm::vec2(1.0f, 0.0f), // right
+            glm::vec2(0.0f, -1.0f), // down
+            glm::vec2(-1.0f, 0.0f) // left
+        };
+
+        for (unsigned int i { 0 }; i < 4; ++i) {
+            float dotProduct { glm::dot(glm::normalize(target), compass[i]) };
+
+            if (dotProduct > max) {
+                max = dotProduct;
+                bestMatch = i;
+            }
+        }
+
+        return (Direction)bestMatch;
+    }
+
     // AABB – AABB collision
     bool checkCollision(GameObject& one, GameObject& two)
     {
@@ -117,7 +202,7 @@ public:
     }
 
     // Circle – AABB collision
-    bool checkCollision(BallObject& one, GameObject& two)
+    Collision checkCollision(BallObject& one, GameObject& two)
     {
         // get center point of circle
         glm::vec2 center { one.getPosition() + one.getRadius() };
@@ -135,7 +220,11 @@ public:
 
         // retrieve vector between center circle and closest point AABB and check if length <= radius
         difference = closest - center;
-        return glm::length(difference) < one.getRadius();
+
+        if (glm::length(difference) <= one.getRadius())
+            return Collision { true, vectorDirection(difference), difference };
+        else
+            return Collision { false, Up, glm::vec2(0.0f, 0.0f) };
     }
 
     void doCollisions()
@@ -144,31 +233,51 @@ public:
 
         for (auto& box : *bricks) {
             if (!box.getIsDestroyed()) {
-                if (checkCollision(*m_ball, box)) {
+                Collision collision { checkCollision(*m_ball, box) };
+
+                if (collision.hasCollided) {
                     if (!box.getIsSolid())
                         box.setIsDestroyed(true);
+
+                    if (collision.direction == Left || collision.direction == Right) {
+                        m_ball->setVelocityX(-m_ball->getVelocityX());
+
+                        // relocate
+                        float penetration { m_ball->getRadius() - std::abs(collision.difference.x) };
+
+                        if (collision.direction == Left)
+                            m_ball->setPositionX(m_ball->getPositionX() + penetration);
+                        else
+                            m_ball->setPositionX(m_ball->getPositionX() - penetration);
+                    } else {
+                        m_ball->setVelocityY(-m_ball->getVelocityY());
+
+                        // relocate
+                        float penetration { m_ball->getRadius() - std::abs(collision.difference.y) };
+
+                        if (collision.direction == Up)
+                            m_ball->setPositionY(m_ball->getPositionY() + penetration);
+                        else
+                            m_ball->setPositionY(m_ball->getPositionY() - penetration);
+                    }
                 }
             }
         }
-    }
 
-    void
-    update(float deltaTime)
-    {
-        m_ball->move(deltaTime, m_width);
+        Collision collision { checkCollision(*m_ball, *m_player) };
 
-        doCollisions();
-    }
+        if (!m_ball->getIsStuck() && collision.hasCollided) {
+            // check where it hit the board, and change the velocity
+            float centerBoard { m_player->getPositionX() + m_player->getSizeX() / 2.0f };
+            float distance { (m_ball->getPositionX() + m_ball->getRadius()) - centerBoard };
+            float percentage { distance / (m_player->getSizeX() / 2.0f) };
 
-    void render(ResourceManager& resourceManager)
-    {
-        if (m_state == Active) {
-            Texture2D texture { resourceManager.getTexture("background") };
-            m_renderer->drawSprite(texture, glm::vec2(0.0f, 0.0f), glm::vec2(m_width, m_height), 0.0f);
-
-            m_levels[m_level].draw(*m_renderer);
-            m_player->draw(*m_renderer);
-            m_ball->draw(*m_renderer);
+            // then move accordingly
+            float strength { 2.0f };
+            glm::vec2 oldVelocity { m_ball->getVelocity() };
+            m_ball->setVelocityX(m_initialBallVelocity.x * percentage * strength);
+            m_ball->setVelocityY(-1.0f * std::abs(m_ball->getVelocityY()));
+            m_ball->setVelocity(glm::normalize(m_ball->getVelocity()) * glm::length(oldVelocity));
         }
     }
 

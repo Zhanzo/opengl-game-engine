@@ -11,7 +11,7 @@
 const size_t screenWidth { 800 };
 const size_t screenHeight { 600 };
 
-Game Breakout { screenWidth, screenHeight };
+Game game { screenWidth, screenHeight };
 ResourceManager resourceManager;
 
 // camera
@@ -56,7 +56,7 @@ int main()
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    Breakout.init(resourceManager);
+    game.init(resourceManager);
 
     // timing
     float deltaTime { 0.0f }; // Time between current frame and last frame
@@ -71,15 +71,15 @@ int main()
 
         // input
         // -----
-        Breakout.processInput(deltaTime);
+        game.processInput(deltaTime);
 
-        Breakout.update(deltaTime);
+        game.update(deltaTime, resourceManager);
 
         // render
         // ------
         glClearColor(0, 0, 0, 1);
         glClear(GL_COLOR_BUFFER_BIT);
-        Breakout.render(resourceManager);
+        game.render(resourceManager);
 
         // check and call events and swap the buffers
         glfwSwapBuffers(window);
@@ -100,9 +100,9 @@ void keyCallback(GLFWwindow* window, int key, int scanCode, int action, int mode
         glfwSetWindowShouldClose(window, true);
     if (key >= 0 && key < 1024) {
         if (action == GLFW_PRESS)
-            Breakout.setKey(key, true);
+            game.setKey(key, true);
         else if (action == GLFW_RELEASE)
-            Breakout.setKey(key, false);
+            game.setKey(key, false);
     }
 }
 

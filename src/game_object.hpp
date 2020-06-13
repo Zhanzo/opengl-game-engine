@@ -40,7 +40,19 @@ public:
 
     void setIsDestroyed(float isDestroyed) { m_isDestroyed = isDestroyed; }
 
+    void setPosition(glm::vec2 position) { m_position = position; }
+
     void setPositionX(float position) { m_position.x = position; }
+
+    void setPositionY(float position) { m_position.y = position; }
+
+    void setVelocity(glm::vec2 velocity) { m_velocity = velocity; }
+
+    void setVelocityX(float velocity) { m_velocity.x = velocity; }
+
+    void setVelocityY(float velocity) { m_velocity.y = velocity; }
+
+    void setSize(glm::vec2 size) { m_size = size; }
 
     bool getIsSolid() { return m_isSolid; }
 
@@ -51,6 +63,12 @@ public:
     float getPositionX() { return m_position.x; }
 
     float getPositionY() { return m_position.y; }
+
+    glm::vec2 getVelocity() { return m_velocity; }
+
+    float getVelocityX() { return m_velocity.x; }
+
+    float getVelocityY() { return m_velocity.y; }
 
     glm::vec2 getSize() { return m_size; }
 
