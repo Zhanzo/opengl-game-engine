@@ -8,6 +8,7 @@
 #include "ball_object.hpp"
 #include "game_level.hpp"
 #include "game_object.hpp"
+#include "particle_generator.hpp"
 #include "resource_manager.hpp"
 #include "sprite_renderer.hpp"
 
@@ -42,23 +43,29 @@ public:
 
     ~Game()
     {
-        delete m_player;
         delete m_renderer;
+        delete m_player;
+        delete m_ball;
+        delete m_particles;
     }
 
     void init(ResourceManager& resourceManager)
     {
         // load shaders
         resourceManager.loadShader("sprite", "shader.vert", "shader.frag");
-        Shader shader { resourceManager.getShader("sprite") };
+        resourceManager.loadShader("particle", "particle.vert", "particle.frag");
 
-        // configure shaders
+        // configure shader
+        Shader shader { resourceManager.getShader("sprite") };
         glm::mat4 projection { glm::ortho(0.0f, static_cast<float>(m_width), static_cast<float>(m_height), 0.0f, -1.0f, 1.0f) };
         shader.use();
         shader.setInt("image", 0);
         shader.setMat4("projection", projection);
 
-        m_renderer = new SpriteRenderer { shader };
+        // configure particle shader
+        Shader particleShader { resourceManager.getShader("particle") };
+        particleShader.use();
+        particleShader.setMat4("projection", projection);
 
         // load textures
         resourceManager.loadTexture("textures/background.jpg", false, "background");
@@ -66,6 +73,11 @@ public:
         resourceManager.loadTexture("textures/block.png", false, "block");
         resourceManager.loadTexture("textures/block_solid.png", false, "block_solid");
         resourceManager.loadTexture("textures/paddle.png", true, "paddle");
+        resourceManager.loadTexture("textures/particle.png", true, "particle");
+
+        Texture2D particleTexture { resourceManager.getTexture("particle") };
+        m_renderer = new SpriteRenderer { shader };
+        m_particles = new ParticleGenerator { particleShader, particleTexture, 500 };
 
         // load levels
         GameLevel levelOne, levelTwo, levelThree, levelFour;
@@ -97,6 +109,8 @@ public:
 
         doCollisions();
 
+        m_particles->update(deltaTime, *m_ball, 2, glm::vec2(m_ball->getRadius() / 2.0f));
+
         if (m_ball->getPositionY() >= m_height) {
             resetLevel(resourceManager);
             resetPlayer();
@@ -111,6 +125,7 @@ public:
 
             m_levels[m_level].draw(*m_renderer);
             m_player->draw(*m_renderer);
+            m_particles->draw();
             m_ball->draw(*m_renderer);
         }
     }
@@ -287,6 +302,7 @@ public:
 
 private:
     SpriteRenderer* m_renderer;
+    ParticleGenerator* m_particles;
     GameObject* m_player;
     BallObject* m_ball;
     GameState m_state;
