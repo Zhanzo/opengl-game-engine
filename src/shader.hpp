@@ -65,6 +65,8 @@ public:
 
     void deleteShader() { glDeleteProgram(m_id); }
 
+    GLuint getID() const { return m_id; }
+
     void setBool(const std::string& name, bool value) const
     {
         GLint location { glGetUniformLocation(m_id, name.c_str()) };

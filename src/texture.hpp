@@ -42,15 +42,16 @@ public:
 
     void bind() const { glBindTexture(GL_TEXTURE_2D, m_id); }
 
-    void setInternalFormat(unsigned int format) { m_internalFormat = format; }
+    GLuint getID() const { return m_id; }
 
-    void setImageFormat(unsigned int format) { m_imageFormat = format; }
+    void setInternalFormat(GLuint format) { m_internalFormat = format; }
+
+    void setImageFormat(GLuint format) { m_imageFormat = format; }
 
 private:
-    unsigned int m_id;
+    GLuint m_id;
     size_t m_width, m_height;
-    unsigned int m_internalFormat, m_imageFormat;
-    unsigned int m_wrapS, m_wrapT;
-    unsigned int m_filterMin, m_filterMax;
+    GLuint m_internalFormat, m_imageFormat;
+    GLuint m_wrapS, m_wrapT;
+    GLuint m_filterMin, m_filterMax;
 };
-

@@ -9,6 +9,7 @@
 #include "game_level.hpp"
 #include "game_object.hpp"
 #include "particle_generator.hpp"
+#include "post_processor.hpp"
 #include "resource_manager.hpp"
 #include "sprite_renderer.hpp"
 
@@ -54,6 +55,7 @@ public:
         // load shaders
         resourceManager.loadShader("sprite", "shader.vert", "shader.frag");
         resourceManager.loadShader("particle", "particle.vert", "particle.frag");
+        resourceManager.loadShader("postprocessing", "post_processing.vert", "post_processing.frag");
 
         // configure shader
         Shader shader { resourceManager.getShader("sprite") };
@@ -65,7 +67,11 @@ public:
         // configure particle shader
         Shader particleShader { resourceManager.getShader("particle") };
         particleShader.use();
+        particleShader.setInt("sprite", 0);
         particleShader.setMat4("projection", projection);
+
+        // configure post processing shader
+        Shader postProcessingShader { resourceManager.getShader("postprocessing") };
 
         // load textures
         resourceManager.loadTexture("textures/background.jpg", false, "background");
@@ -75,9 +81,11 @@ public:
         resourceManager.loadTexture("textures/paddle.png", true, "paddle");
         resourceManager.loadTexture("textures/particle.png", true, "particle");
 
+        // set render-specific controls
         Texture2D particleTexture { resourceManager.getTexture("particle") };
         m_renderer = new SpriteRenderer { shader };
         m_particles = new ParticleGenerator { particleShader, particleTexture, 500 };
+        m_effects = new PostProcessor { postProcessingShader, 2 * m_width, 2 * m_height };
 
         // load levels
         GameLevel levelOne, levelTwo, levelThree, levelFour;
@@ -105,12 +113,24 @@ public:
 
     void update(float deltaTime, ResourceManager& resourceManager)
     {
+        // update objects
         m_ball->move(deltaTime, m_width);
 
+        // check for collisions
         doCollisions();
 
+        // update particles
         m_particles->update(deltaTime, *m_ball, 2, glm::vec2(m_ball->getRadius() / 2.0f));
 
+        // reduce shake time
+        if (m_shakeTime > 0.0f) {
+            m_shakeTime -= deltaTime;
+
+            if (m_shakeTime <= 0.0f)
+                m_effects->setShake(false);
+        }
+
+        // check loss condition
         if (m_ball->getPositionY() >= m_height) {
             resetLevel(resourceManager);
             resetPlayer();
@@ -120,32 +140,33 @@ public:
     void render(ResourceManager& resourceManager)
     {
         if (m_state == Active) {
+            m_effects->beginRender();
+
+            // draw background
             Texture2D texture { resourceManager.getTexture("background") };
             m_renderer->drawSprite(texture, glm::vec2(0.0f, 0.0f), glm::vec2(m_width, m_height), 0.0f);
 
+            // draw level
             m_levels[m_level].draw(*m_renderer);
             m_player->draw(*m_renderer);
             m_particles->draw();
             m_ball->draw(*m_renderer);
+
+            m_effects->endRender();
+            m_effects->render(glfwGetTime());
         }
     }
 
     void resetLevel(ResourceManager& resourceManager)
     {
-        switch (m_level) {
-        case 0:
+        if (m_level == 0)
             m_levels[0].load(resourceManager, "levels/one.lvl", m_width, m_height / 2);
-            break;
-        case 1:
+        else if (m_level == 1)
             m_levels[1].load(resourceManager, "levels/two.lvl", m_width, m_height / 2);
-            break;
-        case 2:
+        else if (m_level == 2)
             m_levels[2].load(resourceManager, "levels/three.lvl", m_width, m_height / 2);
-            break;
-        case 3:
+        else if (m_level == 3)
             m_levels[3].load(resourceManager, "levels/four.lvl", m_width, m_height / 2);
-            break;
-        }
     }
 
     void resetPlayer()
@@ -251,8 +272,14 @@ public:
                 Collision collision { checkCollision(*m_ball, box) };
 
                 if (collision.hasCollided) {
+
                     if (!box.getIsSolid())
                         box.setIsDestroyed(true);
+                    else {
+                        // enable shake effect
+                        m_shakeTime = 0.05f;
+                        m_effects->setShake(true);
+                    }
 
                     if (collision.direction == Left || collision.direction == Right) {
                         m_ball->setVelocityX(-m_ball->getVelocityX());
@@ -302,6 +329,7 @@ public:
 
 private:
     SpriteRenderer* m_renderer;
+    PostProcessor* m_effects;
     ParticleGenerator* m_particles;
     GameObject* m_player;
     BallObject* m_ball;
@@ -309,6 +337,7 @@ private:
     std::vector<GameLevel> m_levels;
     std::vector<bool> m_keys;
     size_t m_width, m_height, m_level;
+    float m_shakeTime { 0.0f };
     const glm::vec2 m_playerSize { 100.0f, 20.0f };
     const glm::vec2 m_initialBallVelocity { 100.0f, -350.0f };
     const float m_playerVelocity { 500.0f };
