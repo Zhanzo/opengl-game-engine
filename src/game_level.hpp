@@ -11,7 +11,7 @@ class GameLevel {
 public:
     GameLevel() { }
 
-    void load(ResourceManager& resourceManager, const std::string& file, size_t levelWidth, size_t levelHeight)
+    void load(const ResourceManager& resourceManager, const std::string& file, size_t levelWidth, size_t levelHeight)
     {
         m_bricks.clear();
 
@@ -60,7 +60,7 @@ public:
 private:
     std::vector<GameObject> m_bricks;
 
-    void init(ResourceManager& resourceManager, std::vector<std::vector<size_t>> tileData, size_t levelWidth, size_t levelHeight)
+    void init(const ResourceManager& resourceManager, std::vector<std::vector<size_t>> tileData, size_t levelWidth, size_t levelHeight)
     {
         // calculate dimensions
         size_t height { tileData.size() };

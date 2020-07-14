@@ -34,10 +34,7 @@ public:
         return m_textures[name];
     }
 
-    Texture2D getTexture(const std::string& name)
-    {
-        return m_textures[name];
-    }
+    Texture2D getTexture(const std::string& name) const { return m_textures.at(name); }
 
     void clear()
     {

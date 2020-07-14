@@ -8,6 +8,8 @@ public:
         : GameObject {}
         , m_radius { 12.5f }
         , m_isStuck { true }
+        , m_isSticky { false }
+        , m_canPassThrough { false }
     {
     }
 
@@ -15,6 +17,8 @@ public:
         : GameObject { pos, glm::vec2(radius * 2.0f), sprite, glm::vec3(1.0f), velocity }
         , m_radius { radius }
         , m_isStuck { true }
+        , m_isSticky { false }
+        , m_canPassThrough { false }
     {
     }
 
@@ -45,15 +49,25 @@ public:
         m_position = position;
         m_velocity = velocity;
         m_isStuck = true;
+        m_isSticky = false;
+        m_canPassThrough = false;
     }
 
     void setIsStuck(bool isStuck) { m_isStuck = isStuck; }
 
-    float getRadius() { return m_radius; }
+    void setIsSticky(bool isSticky) { m_isSticky = isSticky; }
 
-    bool getIsStuck() { return m_isStuck; }
+    void setCanPassThrough(bool canPassThrough) { m_canPassThrough = canPassThrough; }
+
+    float getRadius() const { return m_radius; }
+
+    bool getIsStuck() const { return m_isStuck; }
+
+    bool getIsSticky() const { return m_isSticky; }
+
+    bool getCanPassThrough() const { return m_canPassThrough; }
 
 private:
     float m_radius;
-    bool m_isStuck;
+    bool m_isStuck, m_isSticky, m_canPassThrough;
 };

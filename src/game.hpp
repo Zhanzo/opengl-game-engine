@@ -10,6 +10,7 @@
 #include "game_object.hpp"
 #include "particle_generator.hpp"
 #include "post_processor.hpp"
+#include "power_up.hpp"
 #include "resource_manager.hpp"
 #include "sprite_renderer.hpp"
 
@@ -80,6 +81,12 @@ public:
         resourceManager.loadTexture("textures/block_solid.png", false, "block_solid");
         resourceManager.loadTexture("textures/paddle.png", true, "paddle");
         resourceManager.loadTexture("textures/particle.png", true, "particle");
+        resourceManager.loadTexture("textures/powerup_speed.png", true, "powerup_speed");
+        resourceManager.loadTexture("textures/powerup_sticky.png", true, "powerup_sticky");
+        resourceManager.loadTexture("textures/powerup_increase.png", true, "powerup_increase");
+        resourceManager.loadTexture("textures/powerup_confuse.png", true, "powerup_confuse");
+        resourceManager.loadTexture("textures/powerup_chaos.png", true, "powerup_chaos");
+        resourceManager.loadTexture("textures/powerup_passthrough.png", true, "powerup_passthrough");
 
         // set render-specific controls
         Texture2D particleTexture { resourceManager.getTexture("particle") };
@@ -111,16 +118,19 @@ public:
         m_ball = new BallObject { ballPos, m_ballRadius, m_initialBallVelocity, ballTexture };
     }
 
-    void update(float deltaTime, ResourceManager& resourceManager)
+    void update(float deltaTime, const ResourceManager& resourceManager)
     {
         // update objects
         m_ball->move(deltaTime, m_width);
 
         // check for collisions
-        doCollisions();
+        doCollisions(resourceManager);
 
         // update particles
         m_particles->update(deltaTime, *m_ball, 2, glm::vec2(m_ball->getRadius() / 2.0f));
+
+        // update powerups
+        updatePowerUps(deltaTime);
 
         // reduce shake time
         if (m_shakeTime > 0.0f) {
@@ -137,9 +147,10 @@ public:
         }
     }
 
-    void render(ResourceManager& resourceManager)
+    void render(const ResourceManager& resourceManager)
     {
         if (m_state == Active) {
+            // begin rendering to postprocessing framebuffer
             m_effects->beginRender();
 
             // draw background
@@ -148,32 +159,28 @@ public:
 
             // draw level
             m_levels[m_level].draw(*m_renderer);
+
+            // draw player
             m_player->draw(*m_renderer);
+
+            // draw powerups
+            for (auto& powerUp : m_powerUps) {
+                if (!powerUp.getIsDestroyed())
+                    powerUp.draw(*m_renderer);
+            }
+
+            // draw particles
             m_particles->draw();
+
+            // draw ball
             m_ball->draw(*m_renderer);
 
+            // end rendering to postprocessing framebuffer
             m_effects->endRender();
+
+            //  render postprocessing quad
             m_effects->render(glfwGetTime());
         }
-    }
-
-    void resetLevel(ResourceManager& resourceManager)
-    {
-        if (m_level == 0)
-            m_levels[0].load(resourceManager, "levels/one.lvl", m_width, m_height / 2);
-        else if (m_level == 1)
-            m_levels[1].load(resourceManager, "levels/two.lvl", m_width, m_height / 2);
-        else if (m_level == 2)
-            m_levels[2].load(resourceManager, "levels/three.lvl", m_width, m_height / 2);
-        else if (m_level == 3)
-            m_levels[3].load(resourceManager, "levels/four.lvl", m_width, m_height / 2);
-    }
-
-    void resetPlayer()
-    {
-        m_player->setSize(m_playerSize);
-        m_player->setPosition(glm::vec2(m_width / 2.0f - m_player->getSizeX() / 2.0f, m_height - m_player->getSizeY()));
-        m_ball->reset(m_player->getPosition() + glm::vec2(m_player->getSizeX() / 2.0f - m_ballRadius, -(m_ballRadius * 2.0f)), m_initialBallVelocity);
     }
 
     void processInput(float deltaTime)
@@ -202,6 +209,46 @@ public:
         }
     }
 
+    void setState(GameState state) { m_state = state; }
+
+    void setKey(int key, bool isPressed) { m_keys[key] = isPressed; }
+
+private:
+    SpriteRenderer* m_renderer;
+    PostProcessor* m_effects;
+    ParticleGenerator* m_particles;
+    GameObject* m_player;
+    BallObject* m_ball;
+    GameState m_state;
+    std::vector<GameLevel> m_levels;
+    std::vector<PowerUp> m_powerUps;
+    std::vector<bool> m_keys;
+    size_t m_width, m_height, m_level;
+    float m_shakeTime { 0.0f };
+    const glm::vec2 m_playerSize { 100.0f, 20.0f };
+    const glm::vec2 m_initialBallVelocity { 100.0f, -350.0f };
+    const float m_playerVelocity { 500.0f };
+    const float m_ballRadius { 12.5f };
+
+    void resetLevel(const ResourceManager& resourceManager)
+    {
+        if (m_level == 0)
+            m_levels[0].load(resourceManager, "levels/one.lvl", m_width, m_height / 2);
+        else if (m_level == 1)
+            m_levels[1].load(resourceManager, "levels/two.lvl", m_width, m_height / 2);
+        else if (m_level == 2)
+            m_levels[2].load(resourceManager, "levels/three.lvl", m_width, m_height / 2);
+        else if (m_level == 3)
+            m_levels[3].load(resourceManager, "levels/four.lvl", m_width, m_height / 2);
+    }
+
+    void resetPlayer()
+    {
+        m_player->setSize(m_playerSize);
+        m_player->setPosition(glm::vec2(m_width / 2.0f - m_player->getSizeX() / 2.0f, m_height - m_player->getSizeY()));
+        m_ball->reset(m_player->getPosition() + glm::vec2(m_player->getSizeX() / 2.0f - m_ballRadius, -(m_ballRadius * 2.0f)), m_initialBallVelocity);
+    }
+
     Direction vectorDirection(glm::vec2 target)
     {
         float max { 0.0f };
@@ -225,8 +272,86 @@ public:
         return (Direction)bestMatch;
     }
 
+    void doCollisions(const ResourceManager& resourceManager)
+    {
+        auto bricks { m_levels[m_level].getBricks() };
+
+        for (auto& box : *bricks) {
+            if (!box.getIsDestroyed()) {
+                Collision collision { checkCollision(*m_ball, box) };
+
+                if (collision.hasCollided) {
+
+                    if (!box.getIsSolid()) {
+                        box.setIsDestroyed(true);
+                        spawnPowerUps(box, resourceManager);
+                    } else {
+                        // enable shake effect
+                        m_shakeTime = 0.05f;
+                        m_effects->setShake(true);
+                    }
+
+                    if (!(m_ball->getCanPassThrough() && !box.getIsSolid())) {
+
+                        if (collision.direction == Left || collision.direction == Right) {
+                            m_ball->setVelocityX(-m_ball->getVelocityX());
+
+                            // relocate
+                            float penetration { m_ball->getRadius() - std::abs(collision.difference.x) };
+
+                            if (collision.direction == Left)
+                                m_ball->setPositionX(m_ball->getPositionX() + penetration);
+                            else
+                                m_ball->setPositionX(m_ball->getPositionX() - penetration);
+                        } else {
+                            m_ball->setVelocityY(-m_ball->getVelocityY());
+
+                            // relocate
+                            float penetration { m_ball->getRadius() - std::abs(collision.difference.y) };
+
+                            if (collision.direction == Up)
+                                m_ball->setPositionY(m_ball->getPositionY() + penetration);
+                            else
+                                m_ball->setPositionY(m_ball->getPositionY() - penetration);
+                        }
+                    }
+                }
+            }
+        }
+
+        for (auto& powerUp : m_powerUps) {
+            if (!powerUp.getIsDestroyed()) {
+                if (powerUp.getPositionY() >= m_height)
+                    powerUp.setIsDestroyed(true);
+
+                if (checkCollision(*m_player, powerUp)) {
+                    activatePowerUp(powerUp);
+                    powerUp.setIsDestroyed(true);
+                    powerUp.setIsActivated(true);
+                }
+            }
+        }
+
+        Collision collision { checkCollision(*m_ball, *m_player) };
+
+        if (!m_ball->getIsStuck() && collision.hasCollided) {
+            // check where it hit the board, and change the velocity
+            float centerBoard { m_player->getPositionX() + m_player->getSizeX() / 2.0f };
+            float distance { (m_ball->getPositionX() + m_ball->getRadius()) - centerBoard };
+            float percentage { distance / (m_player->getSizeX() / 2.0f) };
+
+            // then move accordingly
+            float strength { 2.0f };
+            glm::vec2 oldVelocity { m_ball->getVelocity() };
+            m_ball->setVelocityX(m_initialBallVelocity.x * percentage * strength);
+            m_ball->setVelocityY(-1.0f * std::abs(m_ball->getVelocityY()));
+            m_ball->setVelocity(glm::normalize(m_ball->getVelocity()) * glm::length(oldVelocity));
+            m_ball->setIsStuck(m_ball->getIsSticky());
+        }
+    }
+
     // AABB – AABB collision
-    bool checkCollision(GameObject& one, GameObject& two)
+    bool checkCollision(const GameObject& one, const GameObject& two)
     {
         // collision x-axis?
         bool collisionX { one.getPositionX() + one.getSizeX() >= two.getPositionX() && two.getPositionX() + two.getSizeX() >= one.getPositionX() };
@@ -238,7 +363,7 @@ public:
     }
 
     // Circle – AABB collision
-    Collision checkCollision(BallObject& one, GameObject& two)
+    Collision checkCollision(const BallObject& one, const GameObject& two)
     {
         // get center point of circle
         glm::vec2 center { one.getPosition() + one.getRadius() };
@@ -263,83 +388,109 @@ public:
             return Collision { false, Up, glm::vec2(0.0f, 0.0f) };
     }
 
-    void doCollisions()
+    bool isOtherPowerUpActivated(const std::string& type)
     {
-        auto bricks { m_levels[m_level].getBricks() };
+        for (const auto& powerUp : m_powerUps) {
+            if (powerUp.getIsActivated())
+                if (powerUp.getType() == type)
+                    return true;
+        }
 
-        for (auto& box : *bricks) {
-            if (!box.getIsDestroyed()) {
-                Collision collision { checkCollision(*m_ball, box) };
+        return false;
+    }
 
-                if (collision.hasCollided) {
+    void updatePowerUps(float deltaTime)
+    {
+        for (auto& powerUp : m_powerUps) {
+            powerUp.setPosition(powerUp.getPosition() + powerUp.getVelocity() * deltaTime);
 
-                    if (!box.getIsSolid())
-                        box.setIsDestroyed(true);
-                    else {
-                        // enable shake effect
-                        m_shakeTime = 0.05f;
-                        m_effects->setShake(true);
-                    }
+            if (powerUp.getIsActivated()) {
+                powerUp.setDuration(powerUp.getDuration() - deltaTime);
 
-                    if (collision.direction == Left || collision.direction == Right) {
-                        m_ball->setVelocityX(-m_ball->getVelocityX());
+                if (powerUp.getDuration() <= 0.0f) {
+                    powerUp.setIsActivated(false);
 
-                        // relocate
-                        float penetration { m_ball->getRadius() - std::abs(collision.difference.x) };
-
-                        if (collision.direction == Left)
-                            m_ball->setPositionX(m_ball->getPositionX() + penetration);
-                        else
-                            m_ball->setPositionX(m_ball->getPositionX() - penetration);
-                    } else {
-                        m_ball->setVelocityY(-m_ball->getVelocityY());
-
-                        // relocate
-                        float penetration { m_ball->getRadius() - std::abs(collision.difference.y) };
-
-                        if (collision.direction == Up)
-                            m_ball->setPositionY(m_ball->getPositionY() + penetration);
-                        else
-                            m_ball->setPositionY(m_ball->getPositionY() - penetration);
+                    if (powerUp.getType() == "sticky") {
+                        if (!isOtherPowerUpActivated("sticky")) {
+                            m_ball->setIsSticky(false);
+                            m_player->setColor(glm::vec3(1.0f));
+                        }
+                    } else if (powerUp.getType() == "pass-through") {
+                        if (!isOtherPowerUpActivated("pass-through")) {
+                            m_ball->setCanPassThrough(false);
+                            m_ball->setColor(glm::vec3(1.0f));
+                        }
+                    } else if (powerUp.getType() == "confuse") {
+                        if (!isOtherPowerUpActivated("confuse")) {
+                            m_effects->setConfuse(false);
+                        }
+                    } else if (powerUp.getType() == "chaos") {
+                        if (!isOtherPowerUpActivated("chaos")) {
+                            m_effects->setChaos(false);
+                        }
                     }
                 }
             }
         }
 
-        Collision collision { checkCollision(*m_ball, *m_player) };
+        // remove all power-ups from vector that are destroyed and deactivated
+        m_powerUps.erase(std::remove_if(m_powerUps.begin(), m_powerUps.end(),
+                             [](const PowerUp& powerUp) { return powerUp.getIsDestroyed() && !powerUp.getIsActivated(); }),
+            m_powerUps.end());
+    }
 
-        if (!m_ball->getIsStuck() && collision.hasCollided) {
-            // check where it hit the board, and change the velocity
-            float centerBoard { m_player->getPositionX() + m_player->getSizeX() / 2.0f };
-            float distance { (m_ball->getPositionX() + m_ball->getRadius()) - centerBoard };
-            float percentage { distance / (m_player->getSizeX() / 2.0f) };
-
-            // then move accordingly
-            float strength { 2.0f };
-            glm::vec2 oldVelocity { m_ball->getVelocity() };
-            m_ball->setVelocityX(m_initialBallVelocity.x * percentage * strength);
-            m_ball->setVelocityY(-1.0f * std::abs(m_ball->getVelocityY()));
-            m_ball->setVelocity(glm::normalize(m_ball->getVelocity()) * glm::length(oldVelocity));
+    void activatePowerUp(const PowerUp& powerUp)
+    {
+        if (powerUp.getType() == "speed") {
+            m_ball->setVelocity(m_ball->getVelocity() * 1.2f);
+        } else if (powerUp.getType() == "sticky") {
+            m_ball->setIsSticky(true);
+            m_player->setColor(glm::vec3(1.0f, 0.5f, 1.0f));
+        } else if (powerUp.getType() == "pass_through") {
+            m_ball->setCanPassThrough(true);
+            m_ball->setColor(glm::vec3(1.0f, 0.5f, 0.5f));
+        } else if (powerUp.getType() == "pad-size-increase") {
+            m_player->setSizeX(m_player->getSizeX() + 50);
+        } else if (powerUp.getType() == "confuse") {
+            if (!m_effects->getChaos())
+                m_effects->setConfuse(true);
+        } else if (powerUp.getType() == "chaos") {
+            if (!m_effects->getConfuse())
+                m_effects->setChaos(true);
         }
     }
 
-    void setState(GameState state) { m_state = state; }
+    void spawnPowerUps(const GameObject& block, const ResourceManager& resourceManager)
+    {
+        Texture2D tex_speed { resourceManager.getTexture("powerup_speed") };
+        Texture2D tex_sticky { resourceManager.getTexture("powerup_sticky") };
+        Texture2D tex_pass { resourceManager.getTexture("powerup_passthrough") };
+        Texture2D tex_size { resourceManager.getTexture("powerup_increase") };
+        Texture2D tex_confuse { resourceManager.getTexture("powerup_confuse") };
+        Texture2D tex_chaos { resourceManager.getTexture("powerup_chaos") };
 
-    void setKey(int key, bool isPressed) { m_keys[key] = isPressed; }
+        if (shouldSpawn(75))
+            m_powerUps.push_back(PowerUp { "speed", glm::vec3(0.5f, 0.5f, 1.0f), 0.0f, block.getPosition(), tex_speed });
 
-private:
-    SpriteRenderer* m_renderer;
-    PostProcessor* m_effects;
-    ParticleGenerator* m_particles;
-    GameObject* m_player;
-    BallObject* m_ball;
-    GameState m_state;
-    std::vector<GameLevel> m_levels;
-    std::vector<bool> m_keys;
-    size_t m_width, m_height, m_level;
-    float m_shakeTime { 0.0f };
-    const glm::vec2 m_playerSize { 100.0f, 20.0f };
-    const glm::vec2 m_initialBallVelocity { 100.0f, -350.0f };
-    const float m_playerVelocity { 500.0f };
-    const float m_ballRadius { 12.5f };
+        if (shouldSpawn(75))
+            m_powerUps.push_back(PowerUp { "sticky", glm::vec3(1.0f, 0.5f, 1.0f), 20.0f, block.getPosition(), tex_sticky });
+
+        if (shouldSpawn(75))
+            m_powerUps.push_back(PowerUp { "pass-through", glm::vec3(0.5f, 1.0f, 0.5f), 10.0f, block.getPosition(), tex_pass });
+
+        if (shouldSpawn(75))
+            m_powerUps.push_back(PowerUp { "pad-size-increase", glm::vec3(1.0f, 0.6f, 0.4f), 0.0f, block.getPosition(), tex_size });
+
+        if (shouldSpawn(15))
+            m_powerUps.push_back(PowerUp { "confuse", glm::vec3(1.0f, 0.3f, 0.3f), 15.0f, block.getPosition(), tex_confuse });
+
+        if (shouldSpawn(15))
+            m_powerUps.push_back(PowerUp { "chaos", glm::vec3(0.9f, 0.25f, 0.25f), 15.0f, block.getPosition(), tex_chaos });
+    }
+
+    bool shouldSpawn(size_t chance)
+    {
+        size_t random { rand() % chance };
+        return random == 0;
+    }
 };

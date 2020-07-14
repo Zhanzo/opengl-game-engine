@@ -105,6 +105,14 @@ public:
 
     void setShake(bool isShaking) { m_shake = isShaking; }
 
+    void setChaos(bool chaos) { m_chaos = chaos; }
+
+    void setConfuse(bool confuse) { m_confuse = confuse; }
+
+    bool getChaos() const { return m_chaos; }
+
+    bool getConfuse() const { return m_confuse; }
+
 private:
     Shader m_shader;
     Texture2D m_texture;

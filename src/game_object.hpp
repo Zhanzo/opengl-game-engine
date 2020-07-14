@@ -54,27 +54,31 @@ public:
 
     void setSize(glm::vec2 size) { m_size = size; }
 
-    bool getIsSolid() { return m_isSolid; }
+    void setSizeX(float size) { m_size.x = size; }
 
-    bool getIsDestroyed() { return m_isDestroyed; }
+    void setColor(glm::vec3 color) { m_color = color; }
 
-    glm::vec2 getPosition() { return m_position; }
+    bool getIsSolid() const { return m_isSolid; }
 
-    float getPositionX() { return m_position.x; }
+    bool getIsDestroyed() const { return m_isDestroyed; }
 
-    float getPositionY() { return m_position.y; }
+    glm::vec2 getPosition() const { return m_position; }
 
-    glm::vec2 getVelocity() { return m_velocity; }
+    float getPositionX() const { return m_position.x; }
 
-    float getVelocityX() { return m_velocity.x; }
+    float getPositionY() const { return m_position.y; }
 
-    float getVelocityY() { return m_velocity.y; }
+    glm::vec2 getVelocity() const { return m_velocity; }
 
-    glm::vec2 getSize() { return m_size; }
+    float getVelocityX() const { return m_velocity.x; }
 
-    float getSizeX() { return m_size.x; }
+    float getVelocityY() const { return m_velocity.y; }
 
-    float getSizeY() { return m_size.y; }
+    glm::vec2 getSize() const { return m_size; }
+
+    float getSizeX() const { return m_size.x; }
+
+    float getSizeY() const { return m_size.y; }
 
 protected:
     glm::vec2 m_position, m_size, m_velocity;
